@@ -42,9 +42,6 @@
     <a class="colorBtn color" href="#">
         #ff0000
     </a>
-    <a class="colorBtn color" href="#">
-       #008000
-    </a>
     <a class="colorBtn color1" href="#">
         #00ffff
     </a>
@@ -74,6 +71,13 @@
             let target = document.querySelector("#changingBg")
             console.log(btn.innerText)
             target.style.backgroundColor = btn.innerText
+        })
+        btn1.addEventListener("click", function(e){
+            e.preventDefault()
+            console.log("Clicked!")
+            let target = document.querySelector("#changingBg")
+            console.log(btn1.innerText)
+            target.style.backgroundColor = btn1.innerText
         })
     </script>
 
