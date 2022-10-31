@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<body>
+<body id="changingBg">
     <h1>pick a color</h1>
     <p>Scegli un colore per cambiare lo sfondo della pagina</p>
     <a class="colorBtn " href="#">
@@ -43,6 +43,14 @@
         let btn3 = document.querySelector(".color3");
         let btn4 = document.querySelector(".color4");
         let btn5 = document.querySelector(".color5");
+
+        btn.addEventListener("click", function(e){
+            e.preventDefault()
+            console.log("Clicked!")
+            let target = document.querySelector("#changingBg")
+            console.log(btn.innerText)
+            target.style.backgroundColor = btn.innerText
+        })
     </script>
 
 </body>
